@@ -1,0 +1,21 @@
+2020-06-11 13:56:30,825 INFO [root] [__init__.py(<module>:10)] - Test日志会不会打印！！！
+2020-06-11 13:56:39,803 INFO [root] [__init__.py(<module>:10)] - Test日志会不会打印！！！
+2020-06-11 13:56:40,066 INFO [root] [test_ihrm_login.py(test01_login_success:24)] - 登录成功的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'cfe2fd57-f419-4aff-b25b-62e601c9d616'}
+2020-06-11 13:56:40,189 INFO [root] [test_ihrm_login.py(test02_mobile_is_empty:41)] - 手机号码为空的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:40,304 INFO [root] [test_ihrm_login.py(test03_mobile_is_not_exists:51)] - 手机号码不存在的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:40,416 INFO [root] [test_ihrm_login.py(test04_password_is_error:60)] - 密码错误的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:40,519 INFO [root] [test_ihrm_login.py(test05_params_is_none:68)] - 无参的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:40,631 INFO [root] [test_ihrm_login.py(test06_params_is_null:76)] - 传入None的结果为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-06-11 13:56:40,744 INFO [root] [test_ihrm_login.py(test07_more_params:85)] - 多参的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '5b670c51-f5e9-4364-9b31-a95e66f449f3'}
+2020-06-11 13:56:40,851 INFO [root] [test_ihrm_login.py(test08_less_params_mobile:94)] - 少参-缺少mobile的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:40,957 INFO [root] [test_ihrm_login.py(test09_less_password:103)] - 少参-缺少password的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:41,062 INFO [root] [test_ihrm_login.py(test10_params_is_error:112)] - 错误参数的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:41,174 INFO [root] [test_ihrm_login.py(test11_password_is_empty:121)] - 密码为空的结果为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-06-11 13:56:41,283 INFO [root] [test_emp_employee.py(test01_login_success:30)] - 登录接口返回的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '1b9484a2-ba99-43f5-b6d7-ea9a63392c78'}
+2020-06-11 13:56:41,284 INFO [root] [test_emp_employee.py(test01_login_success:36)] - 保存到全局变量中的请求头为：{'Content-Type': 'application/json', 'Authorization': 'Bearer 1b9484a2-ba99-43f5-b6d7-ea9a63392c78'}
+2020-06-11 13:56:41,284 INFO [root] [test_emp_employee.py(test02_add_emp:46)] - app.HEADERS的值是：{'Content-Type': 'application/json', 'Authorization': 'Bearer 1b9484a2-ba99-43f5-b6d7-ea9a63392c78'}
+2020-06-11 13:56:41,394 INFO [root] [test_emp_employee.py(test02_add_emp:50)] - 添加员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1270958213117771776'}}
+2020-06-11 13:56:41,394 INFO [root] [test_emp_employee.py(test02_add_emp:54)] - 保存到全局变量的员工的ID为：1270958213117771776
+2020-06-11 13:56:41,500 INFO [root] [test_emp_employee.py(test03_query_emp:63)] - 查询员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1270958213117771776', 'mobile': '12369745692', 'username': '杨利伟', 'password': 'b17fe1559a37623df016bb85d42abf9e', 'enableState': 1, 'createTime': None, 'companyId': '1', 'companyName': '传智播客', 'departmentId': '1063678149528784896', 'timeOfEntry': '2020-05-05T00:00:00.000+0000', 'formOfEmployment': 1, 'workNumber': None, 'formOfManagement': None, 'workingCity': None, 'correctionTime': '2020-05-30T16:00:00.000+0000', 'inServiceStatus': None, 'departmentName': '测试部', 'roleIds': [], 'staffPhoto': None}}
+2020-06-11 13:56:41,647 INFO [root] [test_emp_employee.py(test04_modify_emp:72)] - 修改员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1270958213117771776'}}
+2020-06-11 13:56:41,820 INFO [root] [test_emp_employee.py(test05_delete_emp:81)] - 删除员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
